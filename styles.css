@@ -46,7 +46,7 @@ header {
 }
 
 .logo {
-  font-size: 56px;
+  font-size: 48px;
   font-family: 'Jockey One', sans-serif;
   display: flex;
   align-items: center;
@@ -164,4 +164,8 @@ h3 {
   background: #85CEFF;
   border-color: #0077CD;
   color: #000;
+}
+
+#tempo-slider {
+  accent-color: #0077CD;
 }
