@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleChord</title>
+  <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+
+  <header>
+  <div class="logo">
+    <img src="images/logo.svg" alt="SimpleChord logo" width="56px" height="56px" style="margin-right: 16px;">
+    <span class="logo-simple">Simple</span><span class="logo-chord">Chord</span>
+  </div>
+</header>
+
+<main>
+  <div class="options-container">
+   <section id="key-section">
+    <h2>Key</h2>
+        <div id="key-row"></div>
+            <h3>Modifiers</h3>
+                <div id="modifier-row"></div>
+   </section>
+
+   <section id="mode-section">
+     <h2>Mode</h2>
+     <div id="mode-row">
+       <button id="btn-major" onclick="setMode('major')">Major</button>
+       <button id="btn-minor" onclick="setMode('minor')">minor</button>
+     </div>
+   </section>
+
+   <section id="progression-section">
+    <h2>Progression</h2>
+        <h3>Select</h3>
+            <div id="prog-row"></div>
+        <h3>Build your own</h3>
+            <div id="palette-row"></div>
+            <div id="drop-row"></div>
+    </section>
+  </div>
+
+    <section id="playback">
+      <h2>Playback</h2>
+        <button id="play-btn" onclick="togglePlay()">▶</button>
+          <div id="playback-info">
+            <span id="playback-key"></span>
+            <span id="playback-prog"></span>
+          </div>
+          <div id="playback-chords"></div>
+          <div id="playback-controls">
+            <div id="instrument-group">
+              <h3>Instrument</h3>
+                <button id="btn-piano" onclick="setInstrument('piano')">Piano</button>
+                <button id="btn-guitar" onclick="setInstrument('guitar')">Guitar</button>
+            </div>
+            <div id="tempo-group">
+              <h3>Tempo</h3>
+                <input type="range" min="40" max="200" value="80" id="tempo-slider" oninput="setTempo(this.value)">
+                <span id="tempo-display">80 bpm</span>
+            </div>
+          </div>
+    </section>
+
+ </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
