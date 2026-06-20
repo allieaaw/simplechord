@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: #fff;
+}
+
+.options-container {
+  padding: 24px;
+  color: #000;
+}
+
+button {
+  padding: 8px 24px;
+  border-radius: 5px;
+  border: 2px solid #0077CD;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #111;
+  height: 46px;
+}
+
+button.active {
+  background: #0077CD;
+  border-color: #0077CD;
+  color: #fff;
+}
+
+button:disabled {
+  color: #ADDEFF;
+  background: #EBF7FF;
+  border-color: #ADDEFF;
+  cursor: not-allowed;
+}
+
+/* Hero Section */
+header {
+  background: #000;
+  padding: 24px;
+}
+
+.logo {
+  font-size: 48px;
+  font-family: 'Jockey One', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.logo-simple {
+  color: #fff;
+}
+
+.logo-chord {
+  color: #0077CD;
+}
+
+/* Main Content */
+
+section {
+  padding-bottom: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-family: 'Jockey One', sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Karla', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 16px;
+}
+
+.roman {
+  font-weight: 400;
+}
+
+#key-row, #prog-row, #palette-row, #playback-chords {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#drop-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 60px;
+  border: 2px dashed #85CEFF;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+#clear-row {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+#key-row button, #modifier-row button, #playback-chords button {
+  width: 46px;
+  padding: 0;
+}
+
+#drop-row button {
+  background: #0077CD;
+  border-color: #0077CD;
+  color: #fff;
+}
+
+#clear-row button {
+  font-size: 12px;
+  color: #0077CD;
+  background: none;
+  border: none;
+  padding: 0px 2px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+#playback {
+  background: #000;
+  padding: 24px;
+  color: #fff;
+}
+
+#play-btn {
+  color: #fff;
+  background-color: #0077CD;
+  border-color: #0077CD;
+}
+
+#playback-info {
+  margin: 16px 0;
+  font-size: 20px;
+}
+
+#playback-chords {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+#playback-chords button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  min-width: 56px;
+}
+
+#playback-chords button.active {
+  background: #85CEFF;
+  border-color: #0077CD;
+  color: #000;
+}
+
+#tempo-slider {
+  accent-color: #0077CD;
+}
